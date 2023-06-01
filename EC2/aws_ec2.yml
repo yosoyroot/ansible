@@ -3,8 +3,15 @@ plugin: amazon.aws.aws_ec2
 
 regions:
   - us-east-1
+
+include_filters:
+- tag:Server:
+  - 'Nginx'
+
 keyed_groups:
   - key: placement.region
     prefix: aws_region
+
+
 ## Do not actually put your key values on the file, export it on your environment first instead and pass the variable above.
 ##  I am doing this directly as its from KODEKLOUD which gets deleted after 3 hours.
