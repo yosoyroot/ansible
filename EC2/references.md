@@ -1,0 +1,1 @@
+https://docs.ansible.com/ansible/latest/inventory_guide/connection_details.html#host-key-checking

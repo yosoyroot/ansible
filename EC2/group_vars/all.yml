@@ -1,0 +1,4 @@
+---
+ansible_user: ubuntu
+ansible_ssh_private_key_file: /Users/wendy/DEV/terraform-exercises/AWS/EC2/ec2keypair.pem
+
