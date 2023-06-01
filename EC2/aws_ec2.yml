@@ -1,0 +1,14 @@
+---
+plugin: amazon.aws.aws_ec2
+aws_access_key: AKIAR554JLKVHFTCTTX6
+aws_secret_key: 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
+
+## This is a must variable.
+
+regions:
+  - us-east-1
+keyed_groups:
+  - key: placement.region
+    prefix: aws_region
+## Do not actually put your key values on the file, export it on your environment first instead and pass the variable above.
+##  I am doing this directly as its from KODEKLOUD which gets deleted after 3 hours.
