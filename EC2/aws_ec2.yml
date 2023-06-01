@@ -1,9 +1,5 @@
 ---
 plugin: amazon.aws.aws_ec2
-aws_access_key: AKIAR554JLKVHFTCTTX6
-aws_secret_key: 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
-
-## This is a must variable.
 
 regions:
   - us-east-1
