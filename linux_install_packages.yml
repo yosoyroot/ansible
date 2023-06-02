@@ -1,0 +1,19 @@
+---
+- name: Enforce Password Complexity
+  hosts: aws_region_us_east_1
+  become: true
+
+  tasks:
+    - name: Install a list of packages (suitable replacement for 2.11 loop deprecation warning)
+      ansible.builtin.yum:
+        name:
+          - nginx
+          - postgresql
+          - postgresql-server
+        state: present
+      register: installation
+
+
+    - name: List result
+      debug:
+        msg:  "{{ installation.results }}"
